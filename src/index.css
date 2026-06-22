@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary */
+
+  --color-green-500: hsl(163, 72%, 41%);
+  --color-red-500: hsl(356, 69%, 56%);
+
+  --color-blue-600: hsl(208, 92%, 53%);
+  --color-blue-500: hsl(203, 89%, 53%);
+  --color-linear-gradient: hsl(37, 97%, 70%) to hsl(5, 77%, 71%) to
+    hsl(329, 70%, 58%);
+  --color-red-700: hsl(348, 97%, 39%);
+
+  /* Dark Theme */
+
+  --color-linear-gradient: hsl(210, 79%, 56%) to hsl(146, 68%, 55%);
+
+  /* light Theme */
+
+  --color-gray-400: hsl(230, 22%, 74%);
+
+  /* neutral */
+
+  /* Dark Theme */
+
+  --color-gray-950: hsl(230, 17%, 14%);
+  --color-gray-900: hsl(232, 19%, 15%);
+  --color-navy-950: hsl(228, 28%, 20%);
+  --color-gray-400: hsl(230, 22%, 74%);
+  --color-white: hsl(0, 100%, 100%);
+
+  /* light Theme */
+
+  --color-white: hsl(0, 100%, 100%);
+  --color-blue-50: hsl(225, 100%, 98%);
+  --color-navy-50: hsl(227, 47%, 96%);
+  --color-gray-650: hsl(228, 12%, 44%);
+  --color-gray-950: hsl(230, 17%, 14%);
+}
