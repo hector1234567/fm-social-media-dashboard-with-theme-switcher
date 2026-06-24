@@ -13,7 +13,7 @@ export default function DarkModeToggle({ toggleDarkMode, checked }) {
           type="checkbox"
           value=""
           className="sr-only peer"
-          checked={checked ? "true" : ""}
+          checked={checked}
         />
         <div
           className="relative w-9 h-5 bg-gray-400 dark:bg-gradient-to-t dark:from-gradient-21 dark:to-gradient-22 
