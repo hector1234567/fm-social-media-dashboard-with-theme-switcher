@@ -11,13 +11,17 @@ export default function OverviewCard({
   rising,
 }) {
   return (
-    <div className="bg-navy-950 p-4 text-center">
+    <div className="bg-navy-50 dark:bg-navy-950 p-4 text-center rounded-sm">
       <div className="flex justify-between items-center mb-4">
-        <span className="dark:text-gray-400 text-xs font-bold">{title}</span>
+        <span className="text-gray-650 dark:text-gray-400 text-xs font-bold">
+          {title}
+        </span>
         <img className="w-4" src={socialApps[socialApp].icon} alt="Icon" />
       </div>
       <div className="flex justify-between items-end">
-        <span className="dark:text-white text-3xl font-semibold">{qty}</span>
+        <span className="text-gray-950 dark:text-white text-3xl font-semibold">
+          {qty}
+        </span>
         <span
           className={`text-xs font-bold flex justify-center items-center gap-2 ${
             rising ? "text-green-500" : "text-red-500"

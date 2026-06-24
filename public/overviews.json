@@ -1,44 +1,58 @@
 [
   {
     "title": "Page Views",
-    "qty": 87,
+    "qty": "87",
     "socialApp": "facebook",
     "percentage": 3,
     "rising": true
   },
   {
-    "title": "Page Views",
-    "qty": 87,
+    "title": "Likes",
+    "qty": "52",
     "socialApp": "facebook",
-    "percentage": 3,
+    "percentage": 2,
+    "rising": false
+  },
+  {
+    "title": "Likes",
+    "qty": "5462",
+    "socialApp": "instagram",
+    "percentage": 2257,
     "rising": true
   },
   {
-    "title": "Page Views",
-    "qty": 87,
-    "socialApp": "facebook",
-    "percentage": 3,
+    "title": "Profile Views",
+    "qty": "52k",
+    "socialApp": "instagram",
+    "percentage": 1375,
     "rising": true
   },
   {
-    "title": "Page Views",
-    "qty": 87,
-    "socialApp": "facebook",
-    "percentage": 3,
+    "title": "Retweets",
+    "qty": "117",
+    "socialApp": "twitter",
+    "percentage": 303,
     "rising": true
   },
   {
-    "title": "Page Views",
-    "qty": 87,
-    "socialApp": "facebook",
-    "percentage": 3,
+    "title": "Likes",
+    "qty": "507",
+    "socialApp": "twitter",
+    "percentage": 553,
     "rising": true
   },
   {
-    "title": "Page Views",
-    "qty": 87,
-    "socialApp": "facebook",
-    "percentage": 3,
-    "rising": true
+    "title": "Likes",
+    "qty": "107",
+    "socialApp": "youtube",
+    "percentage": 19,
+    "rising": false
+  },
+  {
+    "title": "Total Views",
+    "qty": "1407",
+    "socialApp": "youtube",
+    "percentage": 12,
+    "rising": false
   }
 ]

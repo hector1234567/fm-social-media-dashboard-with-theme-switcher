@@ -15,11 +15,11 @@ export default function Overviews() {
   }, []);
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-3">
       <h2 className="dark:text-white font-bold mb-3 text-xl">
         Overview - Today
       </h2>
-      <div className="space-y-3">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-3">
         {overviews.length ? (
           overviews.map(({ title, qty, socialApp, percentage, rising }) => (
             <OverviewCard
