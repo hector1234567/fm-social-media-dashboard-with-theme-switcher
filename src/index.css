@@ -7,6 +7,7 @@
 
 @theme {
   --font-display: "Inter", serif;
+
   /* Primary */
 
   --color-green-500: hsl(163, 72%, 41%);
@@ -24,7 +25,8 @@
 
   /* Dark Theme */
 
-  --color-linear-gradient: hsl(210, 79%, 56%) to hsl(146, 68%, 55%);
+  --color-gradient-21: hsl(210, 79%, 56%);
+  --color-gradient-22: hsl(146, 68%, 55%);
 
   /* light Theme */
 
@@ -48,3 +50,5 @@
   --color-gray-650: hsl(228, 12%, 44%);
   --color-gray-950: hsl(230, 17%, 14%);
 }
+
+@variant dark (&:where(.dark, .dark *));
