@@ -1,0 +1,26 @@
+[
+  {
+    "socialApp": "facebook",
+    "author": "@nathanf",
+    "followers": "1987",
+    "qty": 12
+  },
+  {
+    "socialApp": "twitter",
+    "author": "@nathanf",
+    "followers": "1044",
+    "qty": 99
+  },
+  {
+    "socialApp": "instagram",
+    "author": "@realnathanf",
+    "followers": "11k",
+    "qty": 1099
+  },
+  {
+    "socialApp": "youtube",
+    "author": "Nathan F.",
+    "followers": "8239",
+    "qty": -144
+  }
+]

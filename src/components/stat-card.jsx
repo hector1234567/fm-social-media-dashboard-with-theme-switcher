@@ -1,12 +1,20 @@
 import iconUp from "../../images/icon-up.svg";
 import iconDown from "../../images/icon-down.svg";
 
-export default function StatCard({ icon, author, followers, qty, gradient }) {
+import { socialApps } from "../socialApps";
+
+export default function StatCard({ socialApp, author, followers, qty }) {
   return (
-    <div className={`bg-gradient-to-r ${gradient} pt-1 rounded-sm`}>
+    <div
+      className={`bg-gradient-to-r ${socialApps[socialApp].gradient} pt-1 rounded-sm`}
+    >
       <div className="bg-navy-950 p-5 text-center">
         <div className="text-gray-400 flex justify-center text-xs mb-3">
-          <img src={icon} alt="Icon" className="mr-2 self-center" />
+          <img
+            src={socialApps[socialApp].icon}
+            alt="Icon"
+            className="mr-2 self-center"
+          />
           <span className=" self-center font-bold">{author}</span>
         </div>
         <p className="text-white font-extrabold text-5xl mb-1">{followers}</p>
