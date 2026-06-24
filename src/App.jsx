@@ -7,6 +7,7 @@ import instagram from "../images/icon-instagram.svg";
 import youtube from "../images/icon-youtube.svg";
 import DarkModeToggle from "./components/dark-mode-toggle";
 import { useState } from "react";
+import OverviewCard from "./components/overview-card";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -63,6 +64,62 @@ function App() {
           qty="-144"
           gradient="from-red-700 to-red-700"
         />
+      </div>
+      <div className="container mx-auto p-4">
+        <h2 className="dark:text-white font-bold mb-3 text-xl">
+          Overview - Today
+        </h2>
+        <div className="space-y-3">
+          <OverviewCard
+            title="Page Views"
+            qty="87"
+            icon={facebook}
+            percentage="3"
+            rising={true}
+          />
+          <OverviewCard
+            title="Page Views"
+            qty="87"
+            icon={facebook}
+            percentage="3"
+            rising={true}
+          />
+          <OverviewCard
+            title="Page Views"
+            qty="87"
+            icon={facebook}
+            percentage="3"
+            rising={true}
+          />
+          <OverviewCard
+            title="Page Views"
+            qty="87"
+            icon={facebook}
+            percentage="3"
+            rising={true}
+          />
+          <OverviewCard
+            title="Page Views"
+            qty="87"
+            icon={facebook}
+            percentage="3"
+            rising={true}
+          />
+          <OverviewCard
+            title="Page Views"
+            qty="87"
+            icon={facebook}
+            percentage="3"
+            rising={true}
+          />
+          <OverviewCard
+            title="Page Views"
+            qty="87"
+            icon={facebook}
+            percentage="3"
+            rising={true}
+          />
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import iconDown from "../../images/icon-down.svg";
 export default function StatCard({ icon, author, followers, qty, gradient }) {
   return (
     <div className={`bg-gradient-to-r ${gradient} pt-1 rounded-sm`}>
-      <div className={`bg-navy-950 p-5 text-center`}>
+      <div className="bg-navy-950 p-5 text-center">
         <div className="text-gray-400 flex justify-center text-xs mb-3">
           <img src={icon} alt="Icon" className="mr-2 self-center" />
           <span className=" self-center font-bold">{author}</span>
