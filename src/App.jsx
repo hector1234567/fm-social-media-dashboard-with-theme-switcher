@@ -9,7 +9,6 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   function toggleDarkMode() {
-    console.log(darkMode);
     setDarkMode((darkMode) => !darkMode);
   }
 
