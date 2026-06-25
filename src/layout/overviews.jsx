@@ -21,15 +21,18 @@ export default function Overviews() {
       </h2>
       <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-3 xl:gap-5">
         {overviews.length ? (
-          overviews.map(({ title, qty, socialApp, percentage, rising }) => (
-            <OverviewCard
-              title={title}
-              qty={qty}
-              socialApp={socialApp}
-              percentage={percentage}
-              rising={rising}
-            />
-          ))
+          overviews.map(
+            ({ title, qty, socialApp, percentage, rising }, index) => (
+              <OverviewCard
+                key={index}
+                title={title}
+                qty={qty}
+                socialApp={socialApp}
+                percentage={percentage}
+                rising={rising}
+              />
+            ),
+          )
         ) : (
           <Loader />
         )}

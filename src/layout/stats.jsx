@@ -17,8 +17,9 @@ export default function Stats() {
   return (
     <div className="container mx-auto py-4 -mt-16 grid sm:grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-7 px-3">
       {stats.length ? (
-        stats.map(({ socialApp, author, followers, qty }) => (
+        stats.map(({ socialApp, author, followers, qty }, index) => (
           <StatCard
+            key={index}
             socialApp={socialApp}
             author={author}
             followers={followers}

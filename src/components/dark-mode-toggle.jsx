@@ -5,15 +5,13 @@ export default function DarkModeToggle({ toggleDarkMode, checked }) {
         Dark Mode
       </span>
 
-      <label
-        className="inline-flex items-center cursor-pointer"
-        onChange={toggleDarkMode}
-      >
+      <label className="inline-flex items-center cursor-pointer">
         <input
           type="checkbox"
           value=""
           className="sr-only peer"
           checked={checked}
+          onChange={toggleDarkMode}
         />
         <div
           className="relative w-9 h-5 bg-gray-400 dark:bg-gradient-to-t dark:from-gradient-21 dark:to-gradient-22 
