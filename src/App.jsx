@@ -21,7 +21,7 @@ function App() {
     >
       <div className="bg-blue-50 dark:bg-gray-900 rounded-b-3xl pb-16 pt-4">
         <div className="container mx-auto xl:flex xl:items-middle">
-          <div className="">
+          <div className="xl:my-5">
             <h1 className="text-gray-950 dark:text-white font-bold text-xl xl:text-2xl mx-3">
               Social Media Dashboard
             </h1>
