@@ -1,25 +1,15 @@
 import "./App.css";
 
 import DarkModeToggle from "./components/dark-mode-toggle";
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import Stats from "./layout/stats";
 import Overviews from "./layout/overviews";
 import Loader from "./components/loader";
 import { fetchStats, fetchOverviews } from "./utils";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  function toggleDarkMode() {
-    setDarkMode((darkMode) => !darkMode);
-  }
-
   return (
-    <div
-      className={`bg-white dark:bg-gray-950 min-h-screen font-display ${
-        darkMode ? "dark" : ""
-      }`}
-    >
+    <div className="bg-white dark:bg-gray-950 min-h-screen font-display">
       <div className="bg-blue-50 dark:bg-gray-900 rounded-b-3xl pb-16 pt-4">
         <div className="max-w-279 mx-auto lg:flex lg:items-middle">
           <div className="lg:my-5">
@@ -32,10 +22,7 @@ function App() {
           </div>
           <hr className="border-gray-400 opacity-20 my-4 mx-3 xl:hidden" />
           <div className="max-w-279 mx-auto lg:mx-0 lg:ml-auto lg:basis-40 self-center">
-            <DarkModeToggle
-              toggleDarkMode={toggleDarkMode}
-              checked={darkMode}
-            />
+            <DarkModeToggle />
           </div>
         </div>
       </div>

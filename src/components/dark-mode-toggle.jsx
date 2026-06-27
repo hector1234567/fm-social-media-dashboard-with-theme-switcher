@@ -1,4 +1,16 @@
-export default function DarkModeToggle({ toggleDarkMode, checked }) {
+import { useEffect, useState } from "react";
+
+export default function DarkModeToggle() {
+  const [darkMode, setDarkMode] = useState(true);
+
+  function toggleDarkMode() {
+    setDarkMode((darkMode) => !darkMode);
+  }
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode);
+  }, [darkMode]);
+
   return (
     <div className="flex justify-between items-center mx-3">
       <span className="text-gray-600 dark:text-gray-400 font-bold">
@@ -10,7 +22,7 @@ export default function DarkModeToggle({ toggleDarkMode, checked }) {
           type="checkbox"
           value=""
           className="sr-only peer"
-          checked={checked}
+          checked={darkMode}
           onChange={toggleDarkMode}
         />
         <div
