@@ -49,6 +49,8 @@
   --color-navy-50: hsl(227, 47%, 96%);
   --color-gray-650: hsl(228, 12%, 44%);
   --color-gray-950: hsl(230, 17%, 14%);
+
+  --container-3xl: 80rem;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
