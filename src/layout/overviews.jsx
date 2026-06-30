@@ -1,7 +1,8 @@
 import { use } from "react";
 import OverviewCard from "../components/overview-card";
+import ErrorBoundary from "./error-boundary";
 
-export default function Overviews({ fetchOverviews }) {
+function Overviews({ fetchOverviews }) {
   const overviews = use(fetchOverviews);
 
   return (
@@ -26,3 +27,13 @@ export default function Overviews({ fetchOverviews }) {
     </div>
   );
 }
+
+export function OverviewsErrorBoundary(props) {
+  return (
+    <ErrorBoundary>
+      <Overviews {...props} />
+    </ErrorBoundary>
+  );
+}
+
+export default Overviews;

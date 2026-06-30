@@ -1,7 +1,8 @@
 import { use } from "react";
 import StatCard from "../components/stat-card";
+import ErrorBoundary from "./error-boundary";
 
-export default function Stats({ fetchStats }) {
+function Stats({ fetchStats }) {
   const stats = use(fetchStats);
 
   return (
@@ -18,3 +19,13 @@ export default function Stats({ fetchStats }) {
     </div>
   );
 }
+
+export function StatsErrorBoundary(props) {
+  return (
+    <ErrorBoundary>
+      <Stats {...props} />
+    </ErrorBoundary>
+  );
+}
+
+export default Stats;

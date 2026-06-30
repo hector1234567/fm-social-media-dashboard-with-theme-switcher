@@ -6,6 +6,7 @@ import Stats from "./layout/stats";
 import Overviews from "./layout/overviews";
 import Loader from "./components/loader";
 import { fetchStats, fetchOverviews } from "./utils";
+import ErrorBoundary from "./layout/error-boundary";
 
 function App() {
   return (
@@ -26,12 +27,14 @@ function App() {
           </div>
         </div>
       </div>
-      <Suspense fallback={<Loader />}>
-        <Stats fetchStats={fetchStats()} />
-      </Suspense>
-      <Suspense fallback={<Loader />}>
-        <Overviews fetchOverviews={fetchOverviews()} />
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback={<Loader />}>
+          <Stats fetchStats={fetchStats()} />
+        </Suspense>
+        <Suspense fallback={<Loader />}>
+          <Overviews fetchOverviews={fetchOverviews()} />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 }
